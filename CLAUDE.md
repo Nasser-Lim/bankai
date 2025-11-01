@@ -525,12 +525,8 @@ ADMIN_CHAT_ID=123456789  # 관리자의 Telegram User ID
    - 30초 타임아웃
 
 3. **`sliceHtmlFromAnchor(html, anchor, size)`**: HTML 슬라이스
-   - 앵커(`<div class="group_news">`) 기준
-   - 9999 바이트 크기로 자르기
-   - Claude API 토큰 제한 대응
 
 4. **`detectSelectorsWithClaude(htmlSlice)`**: Claude API 호출
-   - 모델: Claude Sonnet 4.5 (`claude-sonnet-4-5-20250929`)
    - Temperature: 0 (일관성)
    - JSON 응답 파싱
 
