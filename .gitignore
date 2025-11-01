@@ -1,0 +1,98 @@
+# ===================================
+# 환경 변수 (절대 커밋 금지!)
+# ===================================
+.env
+.env.local
+.env.*.local
+env.yaml
+env.*.yaml
+
+# ===================================
+# Firebase & Google Cloud (민감정보)
+# ===================================
+.firebase/
+firebase-debug.log
+firestore-debug.log
+service-account-key.json
+*-service-account.json
+google-credentials.json
+# Firebase 서비스 계정 키 패턴 (프로젝트별)
+bankai-*.json
+*-[0-9a-f]*.json
+
+# ===================================
+# Node.js
+# ===================================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# ===================================
+# TypeScript 빌드 결과
+# ===================================
+dist/
+build/
+*.js
+*.js.map
+# 예외: 설정 파일들은 포함
+!*.config.js
+
+# ===================================
+# 로그 파일
+# ===================================
+*.log
+logs/
+*.log.*
+
+# ===================================
+# IDE & 에디터
+# ===================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ===================================
+# OS 생성 파일
+# ===================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ===================================
+# 임시 파일 & 백업
+# ===================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+nul
+debug-*.html
+*-sliced.html
+
+# ===================================
+# 테스트 커버리지
+# ===================================
+coverage/
+.nyc_output/
+
+# ===================================
+# 기타 민감 정보
+# ===================================
+*.pem
+*.key
+*.cert
+*.crt
+secrets/
+private/

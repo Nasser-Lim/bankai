@@ -1,0 +1,40 @@
+{
+  "name": "bankai",
+  "version": "1.0.0",
+  "description": "Naver news exclusive scraper with Telegram notification",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "local": "tsx src/local.ts",
+    "local:test": "tsx src/local.ts full --no-save",
+    "local:test-ranking": "tsx src/local.ts full --no-save --no-duplicate-check",
+    "selector:find": "tsx src/local-selector-finder.ts",
+    "test": "npm run local",
+    "deploy": "gcloud functions deploy scrapeAndNotify --gen2 --runtime nodejs20 --trigger-http --allow-unauthenticated --entry-point scrapeAndNotify --region asia-northeast3 --timeout 540s --memory 256MB --env-vars-file env.yaml",
+    "deploy:512mb": "gcloud functions deploy scrapeAndNotify --gen2 --runtime nodejs20 --trigger-http --allow-unauthenticated --entry-point scrapeAndNotify --region asia-northeast3 --timeout 540s --memory 512MB --env-vars-file env.yaml"
+  },
+  "keywords": [
+    "naver",
+    "news",
+    "scraper",
+    "telegram"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "@google-cloud/functions-framework": "^3.3.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^17.2.3",
+    "firebase-admin": "^13.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
