@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(npm run local:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build)",
+      "Bash(dir package.json)",
+      "Bash(npx tsc:*)",
+      "Bash(gcloud functions deploy:*)",
+      "Bash(npm run deploy)",
+      "Bash(gcloud functions describe:*)",
+      "Bash($env:DEBUG=\"true\")",
+      "Bash(npm run local:test-ranking:*)",
+      "Bash(set DEBUG=true)",
+      "Bash(dir:*)",
+      "Bash(cd:*)",
+      "Bash(tsc:*)",
+      "Bash(npm run local:test:*)",
+      "Bash(if [ -f .env ])",
+      "Bash(then echo \"⚠️ .env 파일 존재 - gitignore 확인 필요\")",
+      "Bash(fi)",
+      "Bash(if [ -f env.yaml ])",
+      "Bash(then echo \"⚠️ env.yaml 파일 존재 - gitignore 확인 필요\")",
+      "Bash(git check-ignore:*)",
+      "Bash(nul)",
+      "Bash(git reset:*)",
+      "Bash(del nul 2)",
+      "Bash(powershell -Command \"Remove-Item -Path ''nul'' -Force -ErrorAction SilentlyContinue; if ($? { Write-Host ''nul 삭제 완료'' } else { Write-Host ''nul 파일 없음'' }\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
