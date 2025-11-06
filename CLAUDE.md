@@ -356,7 +356,7 @@ export const BANNED_KEYWORDS: string[] = [
 ```typescript
 // Cloud Functions에서 자동 인증
 admin.initializeApp({
-  projectId: process.env.FIREBASE_PROJECT_ID || 'bankai-474816',
+  projectId: process.env.FIREBASE_PROJECT_ID || 'bankai-123456',
 });
 ```
 
