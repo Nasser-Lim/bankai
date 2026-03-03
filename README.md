@@ -473,12 +473,6 @@ gcloud functions logs tail scrapeAndNotify --gen2 --region asia-northeast3
 
 ISC
 
-## 참고 문서
+## 문의
 
-- [DEPLOYMENT.md](DEPLOYMENT.md) - 상세 배포 가이드
-- [ADC_MIGRATION.md](ADC_MIGRATION.md) - ADC 마이그레이션 가이드
-- [CLAUDE.md](CLAUDE.md) - 프로젝트 기술 스택 및 구조 상세
-- [Google Cloud Functions 문서](https://cloud.google.com/functions/docs)
-- [Cloud Scheduler 문서](https://cloud.google.com/scheduler/docs)
-- [Firestore 문서](https://firebase.google.com/docs/firestore)
-- [Telegram Bot API 문서](https://core.telegram.org/bots/api)
+eight@sbs.co.kr
